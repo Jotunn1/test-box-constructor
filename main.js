@@ -39,19 +39,19 @@ formImage.addEventListener('change', () => {
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     if (formImage.value && formTitle.value && formText.value && formLink.value) {
-        fileReader.onload = (event) => {
-            let image = event.target.result
-            document.querySelector(".product__image").setAttribute("src", image)
-        }
-        fileReader.readAsDataURL(formImage.files[0])
         const productBox = `<div class="product__box">
                     <a class="product__link" href="${formLink.value}">
-                        <img class="product__image" src= alt="some-product">
+                        <img class="product__image"  alt="some-product">
                         <h3 class="product__title">${formTitle.value}</h3>
                         <p class="product__text">${formText.value}</p>
                     </a>
                     </div>`
-        content.insertAdjacentHTML("afterbegin", productBox)
+        content.insertAdjacentHTML("beforeend", productBox)
+        fileReader.readAsDataURL(formImage.files[0])
+        fileReader.onload = (event) => {
+            let images = document.querySelectorAll(".product__image");
+            images[images.length - 1].setAttribute("src", event.target.result)
+        }
         form.reset()
         preview.style.backgroundImage = null
         formImageDescr.style.display = "block"
