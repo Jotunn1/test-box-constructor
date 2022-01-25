@@ -1,0 +1,128 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  box-sizing: border-box;
+  background-color: rgb(204, 200, 200);
+}
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form {
+  background-color: #777777;
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+  height: 25vh;
+}
+.form__inner {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.form__image {
+  z-index: 2;
+  background-color: #dcdcdc;
+  width: 200px;
+  height: 150px;
+  margin: 10px 20px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.form__image-descr {
+  position: absolute;
+  font-size: 14px;
+  top: 60px;
+  left: 55px;
+  z-index: -1;
+}
+.image__input {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.form__text {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form__textarea,
+.form__input {
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+.form__input {
+  margin-bottom: 10px;
+  height: 25px;
+  width: 90%;
+}
+.form__textarea::placeholder,
+.form__input::placeholder {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+.form__textarea {
+  width: 90%;
+  resize: none;
+  height: 50px;
+  margin-bottom: 40px;
+}
+.form__btn {
+  cursor: pointer;
+  width: 110px;
+  position: absolute;
+  right: 24px;
+  bottom: 10px;
+}
+.content {
+  margin-top: 50px;
+  background-color: rgb(163, 179, 179);
+}
+.content__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product__box {
+  width: 33%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+.product__link {
+  text-decoration: none;
+  color: #000;
+}
+.product__image {
+  width: 200px;
+  height: 200px;
+}
+.button__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#next-btn {
+  cursor: pointer;
+  padding: 10px;
+  display: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

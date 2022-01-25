@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form" id="form" action="">
+            <div class="form__inner">
+                <div class="form__image">
+                    <span class="form__image-descr">Картинка</span>
+                    <input class="image__input" type="file" accept="image/*" name="file" id="form-image" required>
+                </div>
+                <div class="form__text">
+                    <input class="form__input" type="text" placeholder="Заголовок" id="form-title" required>
+                    <input class="form__input" type="text" placeholder="Ссылка" id="form-link" required>
+                    <textarea class="form__textarea" placeholder="Текст" id="form-text" required></textarea>
+                    <button class="form__btn" id="form-btn" type="submit">Создать</button>
+                </div>
+
+            </div>
+        </form>
+        <div class="content">
+            <div class="content__inner">
+            </div>
+            <div class="button__box">
+                <button id="next-btn">Загрузить больше</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
