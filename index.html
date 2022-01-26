@@ -23,8 +23,10 @@
                 </div>
                 <div class="form__text">
                     <input class="form__input" type="text" placeholder="Заголовок" id="form-title" required>
+                    <p class="popup__error form-title-invalid ">Длина должна быть меньше 20 символов</p>
                     <input class="form__input" type="text" placeholder="Ссылка" id="form-link" required>
                     <textarea class="form__textarea" placeholder="Текст" id="form-text" required></textarea>
+                    <p class="popup__error form-text-invalid ">Длина не должна превышать 250 символов</p>
                     <button class="form__btn" id="form-btn" type="submit">Создать</button>
                 </div>
 
